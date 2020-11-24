@@ -18,6 +18,18 @@ header{
     border-color: gray;  
 }
 
+.nav-item{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+.nav-item:hover{
+    background-color: rgba(210,220,207,0.8);
+    font-size: 18px;
+}
+
 /* main部分 */
 .container{
     padding-bottom: 30px;
@@ -130,7 +142,17 @@ footer {
     width: 100%;
     border:  1px solid;
     border-color: gray;
-    position: absolute;
     height:100px;
+    margin-top: auto;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*アカウント作成ページ*/
+.signup{
+    margin-top:60px;
+}

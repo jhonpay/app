@@ -20,8 +20,8 @@ function search() {
       var lng = results[0].geometry.location.lng();//経度を取得
     　
       var mark = {
-        lat: lat, // 緯度
-        lng: lng // 経度
+        lat, // 緯度
+        lng // 経度
       };
       marker = new google.maps.Marker({ // マーカーの追加
         position: mark, // マーカーを立てる位置を指定
@@ -29,7 +29,6 @@ function search() {
       });
        
       map.setCenter(results[0].geometry.location); // 地図の中心を移動
-      cnt =0;
     }
   });
 }
