@@ -1,8 +1,8 @@
 # 概要
-google mapを利用し、検索した住所周辺の渋滞情報をすぐに確認できるようにしたサイトです。
+google mapを利用し、検索した住所周辺の渋滞情報をすぐに確認できるようにしたアプリです。
 
 # 使い方
 住所入力欄に住所を入力して検索ボタンをクリック。
 
 # 使用した言語等
-HTML/CSS/JavaScript/GitHub
+HTML/CSS/JavaScript/GitHub/google map API/Geocoding API
