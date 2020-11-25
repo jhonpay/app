@@ -6,4 +6,3 @@ google mapを利用し、検索した住所周辺の渋滞情報をすぐに確�
 
 # 使用した言語等
 HTML/CSS/JavaScript/GitHub/google map API/Geocoding API
---api
