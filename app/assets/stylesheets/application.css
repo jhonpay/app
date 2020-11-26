@@ -18,12 +18,7 @@ header{
     border-color: gray;  
 }
 
-.nav-item{
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all  0.3s ease;
-}
+
 
 .nav-item:hover{
     background-color: rgba(210,220,207,0.8);
@@ -57,9 +52,6 @@ header{
 }
 
 /*凡例部分*/
-ul.items{
-    margin-bottom:25px;　
-}
 
 ul.items li {
   display: inline-block;
