@@ -6,19 +6,19 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      ContactMailer.contact_mail(@contact).deliver
+      #ContactMailer.contact_mail(@contact).deliver
       flash[:success] = 'お問い合わせを受け付けました'
       redirect_to root_path
     else
+      flash.now[:danger] = 'メールアドレスとメッセージを入力してください。'
       render :new
     end
   end
   
-  
   private
 
   def contact_params
-    params.require(:contact).permit(:email, :message)
+    params.permit(:email, :message)
   end
   
 end

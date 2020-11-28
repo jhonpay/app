@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   resources :users, only: [:index, :show, :new, :create, :destroy]
   
-  get 'contacts/new'
-  get 'contacts/create'
-  
+  get 'contacts/new', to: 'contacts#new'             #入力画面
+  post 'contacts/new', to: 'contacts#create'        #送信完了
+ 
 end

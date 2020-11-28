@@ -1,3 +1,9 @@
+/* フラッシュメッセージ*/
+.alert{
+    width:58%;
+    margin:auto;
+}
+
 /* header 部分*/
 #title{
     color:#540F0F;

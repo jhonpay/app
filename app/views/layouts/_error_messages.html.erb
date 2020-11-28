@@ -1,9 +1,17 @@
-<% if model.errors.any? %>
-  <div id="error_explanation" class="alert alert-warning">
-    <ul class="mb-0">
-      <% model.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
+if flash[:notice]
+  <div class="alert alert-notice">
+    <%= flash[:notice] %>
   </div>
-<% end %>
+elsif flash[:info]
+  <div class="alert alert-info">
+    <%= flash[:info] %>
+  </div>
+elsif flash[:danger]
+  <div class="alert alert-danger">
+    <%= flash[:danger] %>
+  </div>
+elsif flash[:warning]
+  <div class="alert alert-danger">
+    <%= flash[:danger] %>
+  </div>
+end
