@@ -1,10 +1,23 @@
 Rails.application.routes.draw do
+
+  get 'sessions/new'
+  get 'sessions/create'
+  get 'sessions/destroy'
+  root to: 'tops#index'
+  
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
+ 
   get 'users/index'
   get 'users/show'
   get 'users/new'
   get 'users/create'
-  root to: 'tops#index'
   
   get 'signup', to: 'users#new'
-  resources :users, only: [:index, :show, :new, :create]
+  resources :users, only: [:index, :show, :new, :create, :destroy]
+  
+  get 'contacts/new'
+  get 'contacts/create'
+  
 end
