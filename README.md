@@ -8,7 +8,7 @@ google mapを利用し、検索した住所周辺の交通情報をすぐに確�
 google mapの交通状況の情報を取得し表示します。
 
 ## 使用した言語等
-HTML/CSS/bootstrap/JavaScript/GitHub/Heroku
+HTML/CSS/bootstrap/JavaScript/ruby/GitHub/Heroku
 
 ## 導入したAPI
 GoogleMap/Geocoding
