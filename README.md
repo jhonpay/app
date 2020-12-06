@@ -23,7 +23,7 @@ https://juutaiapp.herokuapp.com
 
 ## テストユーザー
 ユーザー名：tel
-メールアドレス：tel@tel.com
+メールアドレス：tel@co.jp
 パスワード:tel
 
 ## 備考

@@ -38,10 +38,3 @@ function search() {
 // 参考サイト②:https://sites.google.com/site/gmapsapi3/Home/services
 // 参考サイト③:https://www.nanchatte.com/map/getLatLngByAddress.html
 // 経度と緯度をもとにピンドメ(Marker()という関数使用)及びピン留めした部分を中央に表示(setCenter()という関数使用)
-
-function register(){
-  //プロフィールに住所登録する
-  var address = document.getElementById("address").value;
-  
-  console.log(address);
-}
