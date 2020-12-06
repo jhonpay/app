@@ -152,5 +152,17 @@ footer {
 
 /*アカウント作成ページ*/
 .signup{
-    margin-top:60px;
+    margin-top: 60px;
+}
+
+.favorites{
+    margin-top: 60px;
+}
+
+.btn-outline-danger{
+    margin-bottom: 20px;
+}
+
+.place-delete-btn{
+    float:right;
 }

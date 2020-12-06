@@ -1,9 +1,14 @@
 class UsersController < ApplicationController
   def index
+     if logged_in?
+      
+     end
   end
 
   def show
     @user = User.find(params[:id])
+    @result = current_user.results.build 
+    @results = Result.all
   end
 
   def new
@@ -11,9 +16,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    
     @user = User.new(user_params)
-
     if @user.save
       flash[:success] = 'ユーザを登録しました。'
       redirect_to @user

@@ -7,6 +7,11 @@ google mapを利用し、検索した住所周辺の交通情報をすぐに確�
 住所入力欄に住所を入力して検索ボタンをクリック。<br>
 google mapの交通状況の情報を取得し表示します。
 
+## 機能一覧
+- WebAPIによるデータ取得
+- ユーザー登録
+- ログイン / ログアウト等の認証機能
+
 ## 使用した言語等
 HTML/CSS/bootstrap/JavaScript/ruby/GitHub/Heroku
 
@@ -15,6 +20,9 @@ GoogleMap/Geocoding
 
 ## URL
 https://juutaiapp.herokuapp.com
+
+## テストユーザー
+
 
 ## 備考
 ひとまずアカウントの作成、ログイン機能や問い合わせフォームのページも用意はしましたが、<br>

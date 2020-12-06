@@ -1,6 +1,31 @@
 <h2><%= @user.name %></h2>
+<button class="btn btn-outline-danger">
+  <%= link_to "アカウントを削除", @user, method: :delete, data: { confirm: "アカウントを削除しますか?" }%>
+</button>
+<table class="table">
+  <thead>
+    <tr>
+      <th>登録した場所一覧</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%  @results.each do |result| %>   
+    <tr>
+      <td>
+        <a href="/"><%= result.content %></a>
+        <button class="place-delete-btn">
+        <%= link_to "登録から削除", result, method: :delete, data: { confirm: "登録住所を削除しますか?" }%>
+        </button>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
 
-<p>その内整える</p>
+<%= form_with(model: @result, local: true) do |f| %>
+<div class="input-group">
+  <%= f.text_field :content, placeholder: "登録したい住所や場所を入力する", class: "form-control", id: "address" %>
+  <%= f.submit '登録', class: "btn btn-primary", onclick: "register()" %>
+</div>
+<% end %>
 
-<%= link_to "アカウントを削除", @user, method: :delete,
-                                                data: { confirm: "You sure?" }%>
