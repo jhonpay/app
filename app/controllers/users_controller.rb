@@ -1,14 +1,11 @@
 class UsersController < ApplicationController
   def index
-     if logged_in?
-      
-     end
   end
 
   def show
     @user = User.find(params[:id])
-    @result = current_user.results.build 
-    @results = Result.all
+    @result = current_user.results.build
+    @results = current_user.results.order(id: :desc)
   end
 
   def new
@@ -19,7 +16,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = 'ユーザを登録しました。'
-      redirect_to @user
+      redirect_to login_path
     else
       flash.now[:danger] = 'ユーザの登録に失敗しました。'
       render :new
